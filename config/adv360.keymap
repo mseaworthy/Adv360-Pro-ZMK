@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -28,11 +27,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2            &kp N3        &kp N4            &kp N5  &mo 1                                                           &mo 3           &kp N6  &kp N7         &kp N8             &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W             &kp E         &kp R             &kp T   &kp LS(LG(N4))                                                  &msc SCRL_DOWN  &kp Y   &kp U          &kp I              &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S             &kp D         &kp F             &kp G   &mt LG(C) LG(V)  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &msc SCRL_UP    &kp H   &kp J          &kp K              &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X             &kp C         &kp V             &kp B                               &kp HOME      &kp PG_UP                             &kp N   &kp M          &kp COMMA          &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2      &kp GRAVE  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL          &kp BSPC         &kp DEL    &mo 2         &kp PG_DN  &kp ENTER  &kp SPACE               &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp LBKT  &kp RBKT  &mo 2
+&kp EQUAL  &kp N1     &kp N2            &kp N3        &kp N4            &kp N5  &mo 1                                                                            &mo 3              &kp N6  &kp N7         &kp N8             &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W             &kp E         &kp R             &kp T   &kp LS(LG(N4))                                                                   &kp C_AC_ZOOM_IN   &kp Y   &kp U          &kp I              &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S             &kp D         &kp F             &kp G   &kp RETURN      &kp LCTRL  &kp LALT             &kp LA(LC(LG(LGUI)))  &kp F3     &kp C_AC_ZOOM_OUT  &kp H   &kp J          &kp K              &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X             &kp C         &kp V             &kp B                              &mt LG(C) LG(V)      &kp K_SCROLL_UP                                     &kp N   &kp M          &kp COMMA          &kp DOT   &kp FSLH  &kp RSHFT
+&mo 2      &kp GRAVE  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL          &kp SPACE       &kp DEL    &mo 2                &kp K_SCROLL_DOWN     &kp ENTER  &kp BACKSPACE              &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp LBKT  &kp RBKT  &mo 2
             >;
         };
 
